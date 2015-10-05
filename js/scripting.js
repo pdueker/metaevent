@@ -22,8 +22,9 @@ $.fn.serializeObject = function()
 /* funktion zum senden eines json über post*/
 function sendFormular(){
     $.ajax({
-		url: 'http://localhost:8081/WIPprj/sendFormular',
+		url: 'http://localhost:8080/WIPprj/sendFormular',
 		type: 'POST',
 		data: 'jsonString='+JSON.stringify($('form').serializeObject()),
 		success: function() { alert('Daten wurden an Sachbearbeiter übermittelt'); }
     });
+}
