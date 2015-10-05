@@ -67,9 +67,7 @@
             
             <br>
             <a href="#about" class="btn btn-dark btn-lg">REGISTER</a>
-            <form>
-            <input type="submit" onClick="sendFormular();">
-            </form>
+            
         </div>
     </header>
 
@@ -227,7 +225,24 @@
 
     <!-- Map -->
     <section id="contact" class="map">
-   
+   <form enctype="application/json">
+       <input type="text" name="LName">Name</input>
+       <input type="text" name="Pname">Vorname</input>
+       <input type="text" name ="email">e-Mail</input>
+    <select name="job">
+        <option value="Azubi">Azubi</option>
+        <option value="Student">Student</option>
+        <option value="Angestellter">Angestellter</option>  
+    </select>
+    <input type="text" name="comp">Unternehmen</input>
+     <select name="gender">
+        <option value="männlich">männlich</option>
+        <option value="weiblich">weiblich</option>
+    </select>
+    <input type="date" name="birthdate">Geburtsdatum</input>
+
+    <input type="submit" onClick="sendFormular();">
+</form>
     </section>
 
     <!-- Footer -->
