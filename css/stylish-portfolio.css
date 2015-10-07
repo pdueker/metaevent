@@ -38,6 +38,11 @@ body {
 
 /* Custom Button Styles */
 
+.bg-primary{
+background-color:darkgray;
+}
+
+
 .btn-dark {
     border-radius: 0;
     color: #fff;
