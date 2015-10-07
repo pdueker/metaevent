@@ -224,22 +224,58 @@
     </aside>
 
     <!-- Map -->
-    <section id="contact" class="map">
-   <form enctype="application/json">
-       <input class="input-sm" type="text" name="LName">Name</input><br>
-       <input type="text" name="Pname">Vorname</input><br>
-       <input type="text" name ="email">e-Mail</input><br>
-    <select name="job">
-        <option value="Azubi">Azubi</option>
+    <section id="contact" class="" style="    width: 400px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;" >
+   
+        <form  enctype="application/json">
+            
+      <div class="form-group">
+          <label>Name</label>
+          <input class="form-control" type="text" name="LName"></input>
+       </div><br>
+        
+    <div class="form-group">
+       <label>Vorname</label>
+        <input class="form-control" type="text" name="Pname">
+        </input></div><br>
+    
+      <div class="form-group">
+        <label>e-Mail</label>
+          <input class="form-control" type="text" name ="email">
+          </input><br>
+    </div>
+    
+      <div class="form-group">
+          <label>Jobtyp</label><br>
+          <select name="job">
+         <option value="Azubi">Azubi</option>
+        
         <option value="Student">Student</option>
+        
         <option value="Angestellter">Angestellter</option>  
-    </select><br>
-    <input type="text" name="comp">Unternehmen</input><br>
-     <select name="gender">
-        <option value="männlich">männlich</option>
+        
+    </select>
+          <br>
+        <div class="form-group">
+            <label>Unternehmen</label>
+            <input  class="form-control" type="text" name="comp">
+            </input>
+          </div><br>
+    
+<label>Geschlecht</label><br>
+    <select name="gender" class="label">
+    
+       <option value="männlich">männlich</option>
         <option value="weiblich">weiblich</option>
-    </select><br>
-    <input type="date" name="birthdate">Geburtsdatum</input><br>
+    </select>
+    <br>
+    <div class="form-group">
+    <label>Geburtsdatum</label>
+        <input  class="form-control" type="date" name="birthdate"></input>
+    </div><br>
 
     
 </form>
