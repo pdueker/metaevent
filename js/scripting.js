@@ -13,18 +13,19 @@ $.fn.serializeObject = function()
             jsonObj[this.name] = this.value || '';
         }
     });
-	console.log(jsonObj);
-	return jsonObj;
+        console.log(jsonObj);
+        return jsonObj;
 
  }
 
 
 /* funktion zum senden eines json über post*/
 function sendFormular(){
+        var horst = window.location.host;
     $.ajax({
-		url: 'http://localhost:8080/metaeventsbackend/sendFormular',
-		type: 'POST',
-		data: 'jsonString='+JSON.stringify($('form').serializeObject()),
-		success: function() { alert('Daten wurden an Sachbearbeiter übermittelt'); }
+                url: 'http://'+horst+'/metaeventsbackend/sendFormular',
+                type: 'POST',
+                data: 'jsonString='+JSON.stringify($('form').serializeObject()),
+                success: function() { alert('Daten wurden an Sachbearbeiter übermittelt'); }
     });
 }
